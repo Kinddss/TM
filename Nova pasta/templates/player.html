@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+</head>
+<body>
+    
+    <h2>infos do Jogador: {{ player_info['summoner_name'] }}</h2>
+    <p>Lv: {{ player_info['level'] }}</p>
+    <p>rank: {{player_info['rank'] }}</p>
+    <br><br>
+    <form action="{{ url_for('home.index') }}">
+        <input type="submit" value="voltar ao index">
+        
+    </form>
+</body>
+</html>
